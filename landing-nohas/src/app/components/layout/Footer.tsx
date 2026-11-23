@@ -1,5 +1,6 @@
 "use client";
 import "./Footer.module.css";
+import { siteConfig } from "@/config/siteConfig";
 import {useEffect,useState} from "react" 
 export function Footer() {
    const [year,setYear]=useState<string>("");
@@ -16,25 +17,25 @@ useEffect(() => {
 
         {/* Brand */}
         <div className="brand">
-          <h2>Noha&apos;s Kitchen</h2>
-          <p>HOMEMADE WITH LOVE</p>
-          <span>Fresh homemade dishes, prepared with love.</span>
+          <h2>{siteConfig.brand.name}</h2>
+          <p>{siteConfig.brand.slogan}</p>
+          <span>{siteConfig.brand.description[0]}</span>
         </div>
 
         {/* Contact */}
         <div className="contact">
-          <h3>Contact Us</h3>
+          <h3>{siteConfig.contact.phone.name}</h3>
 
-          <a href="tel:+961XXXXXXXX">
+          <a href={`tel:${siteConfig.contact.phone.number}`}>
             <span>📞</span> Call Us
           </a>
 
           <a
-            href="https://wa.me/961XXXXXXXX"
+            href={`https://wa.me/961${siteConfig.contact.whatsApp.number}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>💬</span> WhatsApp Orders
+            <span>💬</span> {siteConfig.contact.whatsApp.name}
           </a>
         </div>
 
@@ -42,21 +43,22 @@ useEffect(() => {
         <div className="location">
           <h3>Our Location</h3>
 
-          <p>Bziza, Koura, North Lebanon</p>
+          <p>{siteConfig.location.fullAddress}</p>
 
           <iframe
-            src="https://maps.google.com/maps?q=Bziza%2C%20Koura%2C%20Lebanon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src={siteConfig.location.VillagegoogleMaps}
             loading="lazy"
             title="Noha's Kitchen location in Bziza, Koura"
           />
 
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Bziza%2C+Koura%2C+Lebanon"
+            href={siteConfig.location.VillagegoogleMaps}
             target="_blank"
-            rel="noopener noreferrer"
+            
+            
             className="directions"
           >
-            Get Directions →
+            {siteConfig.button.Location}
           </a>
         </div>
 
@@ -67,11 +69,11 @@ useEffect(() => {
 <div className="socialMedia">
   <h3>Follow Us</h3>
 
-  <p>Discover our homemade dishes and latest offers.</p>
+  <p>{siteConfig.brand.description[1]}</p>
 
   <div className="socialLinks">
     <a
-      href="https://www.instagram.com/noha.skitchen"
+      href={siteConfig.socialMedia.instagram}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Follow Noha's Kitchen on Instagram"
@@ -80,7 +82,7 @@ useEffect(() => {
     </a>
 
     <a
-      href="#"
+      href={siteConfig.socialMedia.facebook}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Follow Noha's Kitchen on Facebook"
@@ -89,7 +91,7 @@ useEffect(() => {
     </a>
 
     <a
-      href="#"
+      href={siteConfig.socialMedia.tiktok}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Follow Noha's Kitchen on TikTok"

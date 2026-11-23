@@ -1,15 +1,7 @@
 
-:root {
-  --text_color: #292821;
-  --text_bt_color: #F5EFE3;
-  --text_slogine_color: #C77B51;
-  --text-link-hover:#000;
-  --Body_color: #eedab8;
-  --button_color: #344B35;
-   --button_color_hover: #d49b55;
-}
 
-header {
+
+.header {
   width: 100%;
   height: 88px;
   box-sizing: border-box;
@@ -18,7 +10,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
-  background: var(--Body_color);
+  background: var(--Header-color);
   border-bottom: 1px solid var(--text_slogine_color);
 }
 

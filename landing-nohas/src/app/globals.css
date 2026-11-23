@@ -1,13 +1,48 @@
 @import "tailwindcss";
 
+
 :root {
- --text_color:#292821;
- --text_bt_color:#F5EFE3;
- --text_slogine_color:#C77B51;
- --Body_color:#D8C5A4;
- --button_color:#344B35;
- 
+  /* BRAND IDENTITY */
+  --brand-primary: #354B35;
+  --brand-secondary: #5D6650;
+  --brand-accent: #B96F4A;
+  --brand-gold: #C69A55;
+
+  /* BACKGROUNDS */
+  --Header-color: #F2E8D5;
+  --Body_color: #F7F2E8;
+  --Footer-color: #354B35;
+  --section-color: #EAE0CE;
+  --card-color: #FFFCF5;
+
+  /* TEXT COLORS */
+  --text_color: #302D26;
+  --text_secondary: #71695D;
+  --text_bt_color: #F7F2E8;
+  --text_slogine_color: #B96F4A;
+  --text-link-hover: #C69A55;
+
+  /* BUTTONS */
+  --button_color: #354B35;
+  --button_color_hover: #C69A55;
+  --button_text: #FFFFFF;
+
+  /* BORDERS */
+  --border_color: #D9CBB5;
+  --border_radius: 10px;
+
+  /* SHADOWS */
+  --shadow_soft: 0 4px 16px rgba(48, 45, 38, 0.08);
+  --shadow_medium: 0 8px 24px rgba(48, 45, 38, 0.12);
+
+  /* TYPOGRAPHY */
+  --font_heading: Georgia, "Times New Roman", serif;
+  --font_body: Arial, Helvetica, sans-serif;
+
+  /* TRANSITIONS */
+  --transition: 0.3s ease;
 }
+
 
 @theme inline {
   --color-background: var(--background);
