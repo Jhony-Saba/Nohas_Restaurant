@@ -73,30 +73,30 @@ useEffect(() => {
 
   <div className="socialLinks">
     <a
-      href={siteConfig.socialMedia.instagram}
+      href={siteConfig.socialMedia.instagram.link}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Follow Noha's Kitchen on Instagram"
     >
-      Instagram
+      {siteConfig.socialMedia.instagram.name}
     </a>
 
     <a
-      href={siteConfig.socialMedia.facebook}
+      href={siteConfig.socialMedia.facebook.link}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Follow Noha's Kitchen on Facebook"
     >
-      Facebook
+    {siteConfig.socialMedia.facebook.name}
     </a>
 
     <a
-      href={siteConfig.socialMedia.tiktok}
+      href={siteConfig.socialMedia.tiktok.link}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Follow Noha's Kitchen on TikTok"
     >
-      TikTok
+     {siteConfig.socialMedia.tiktok.name}
     </a>
   </div>
 </div>

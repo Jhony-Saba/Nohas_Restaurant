@@ -24,9 +24,9 @@ export const siteConfig = {
 },
 
   socialMedia: {
-    instagram: "https://www.instagram.com/noha.skitchen",
-    facebook: "#",
-    tiktok: "#",
+    instagram: {name:"Instagram",link:"https://www.instagram.com/noha.skitchen"},
+    facebook:{name:"Facebook",link:"#"},
+    tiktok: {name:"TikTok",link:"#"},
   },
 
   business: {
