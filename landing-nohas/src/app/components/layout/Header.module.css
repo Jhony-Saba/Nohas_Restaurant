@@ -61,6 +61,7 @@
   font-weight: 700;
   text-decoration: none;
    transition: all 0.3s ease;
+   
 }
 .orderButton:hover {
   background-color: var(--button_color_hover);
@@ -83,6 +84,8 @@
      position: fixed;
      right: 0;
      bottom: 100px;
+     z-index: 1;
+    
     
   }
 }
